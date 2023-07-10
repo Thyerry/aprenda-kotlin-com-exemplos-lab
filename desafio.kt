@@ -16,7 +16,7 @@ data class Formacao(val nome: String, var conteudos: List<ConteudoEducacional>, 
 }
 
 fun main() {
-    val novaFormacao: Formacao = Formacao("kotlin", listOf(ConteudoEducacional("Aprendendo cu"), ConteudoEducacional("Aprendendo rola")), Nivel.BASICO)
+    val novaFormacao: Formacao = Formacao("kotlin", listOf(ConteudoEducacional("Aprendendo fundamentos kotlin"), ConteudoEducacional("Aprendendo fundamentos Android")), Nivel.BASICO)
     novaFormacao.matricular(Usuario("aluno", "aluno@aluno.com"))
     println(novaFormacao.nome)
 	println(novaFormacao.conteudos)
